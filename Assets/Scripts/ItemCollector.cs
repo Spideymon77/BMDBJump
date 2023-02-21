@@ -16,6 +16,7 @@ public class ItemCollector : MonoBehaviour
 
     //SFX when collecting items
     [SerializeField] private AudioSource collectionSoundEffect;
+    [SerializeField] private AudioSource beerSoundEffect;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -31,7 +32,7 @@ public class ItemCollector : MonoBehaviour
         //The Beer variant: 5 points
         if (collision.gameObject.CompareTag("Beer"))
         {
-            collectionSoundEffect.Play();
+            beerSoundEffect.Play();
             Destroy(collision.gameObject);
             gems++;
             gems++;

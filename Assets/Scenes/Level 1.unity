@@ -3341,6 +3341,7 @@ MonoBehaviour:
   gemsText: {fileID: 0}
   highScoreText: {fileID: 0}
   collectionSoundEffect: {fileID: 0}
+  beerSoundEffect: {fileID: 0}
 --- !u!1001 &1295300182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3949,6 +3950,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3174127477972195656, guid: afe7a941987f59747829537e246bcfe2, type: 3}
   m_PrefabInstance: {fileID: 3174127478512060149}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1672434171 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5056873604773197233, guid: 7e44023ec49dc5e40a97f0c9178ca925, type: 3}
+  m_PrefabInstance: {fileID: 5056873604506480483}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1675778997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4491,6 +4497,102 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5056873604773197238, guid: 7e44023ec49dc5e40a97f0c9178ca925, type: 3}
   m_PrefabInstance: {fileID: 5056873604506480483}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1881561824
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672434171}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e7d6db5dc816d3849bdb47d6eb441fce, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1899108328
 GameObject:
   m_ObjectHideFlags: 0
@@ -4862,11 +4964,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5056873604773197238, guid: 7e44023ec49dc5e40a97f0c9178ca925, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32.02
+      value: -20.707
       objectReference: {fileID: 0}
     - target: {fileID: 5056873604773197238, guid: 7e44023ec49dc5e40a97f0c9178ca925, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -38.59
+      value: -0.003
       objectReference: {fileID: 0}
     - target: {fileID: 5056873604773197238, guid: 7e44023ec49dc5e40a97f0c9178ca925, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4908,6 +5010,10 @@ PrefabInstance:
       propertyPath: highScoreText
       value: 
       objectReference: {fileID: 1506056127}
+    - target: {fileID: 5056873604773197242, guid: 7e44023ec49dc5e40a97f0c9178ca925, type: 3}
+      propertyPath: beerSoundEffect
+      value: 
+      objectReference: {fileID: 1881561824}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e44023ec49dc5e40a97f0c9178ca925, type: 3}
 --- !u!1001 &7855546881323256818

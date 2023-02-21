@@ -19,6 +19,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float jumpForce = 5f;
 
+    //SFX for jumping
+    [SerializeField] private AudioSource jumpSoundEffect;
+
     //The states that the player is in for movement and animation
     private enum MovementState { idle, running, jumping, falling }
     
@@ -42,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
         //Allowing the playe to jump as well as checking for jumpable ground
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
+            jumpSoundEffect.Play();
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
 
