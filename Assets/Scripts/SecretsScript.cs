@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class SecretsScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject secretText;
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.name == "Player")
+        {
+            secretText.SetActive(true);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.name == "Player")
+        {
+            secretText.SetActive(false);
+            Destroy(collision.gameObject);
+        }
     }
 }
