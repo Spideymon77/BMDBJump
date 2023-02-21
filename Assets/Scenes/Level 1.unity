@@ -897,7 +897,7 @@ GameObject:
   - component: {fileID: 272215377}
   - component: {fileID: 272215379}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Secret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1008,7 +1008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae6508ac018077e4a9207a2728316747, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secretText: {fileID: 0}
+  secretText: {fileID: 842156644}
 --- !u!1001 &288721570
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4862,11 +4862,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5056873604773197238, guid: 7e44023ec49dc5e40a97f0c9178ca925, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.39
+      value: 32.02
       objectReference: {fileID: 0}
     - target: {fileID: 5056873604773197238, guid: 7e44023ec49dc5e40a97f0c9178ca925, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.019
+      value: -38.59
       objectReference: {fileID: 0}
     - target: {fileID: 5056873604773197238, guid: 7e44023ec49dc5e40a97f0c9178ca925, type: 3}
       propertyPath: m_LocalPosition.z
