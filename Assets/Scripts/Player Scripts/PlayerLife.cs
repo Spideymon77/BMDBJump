@@ -13,6 +13,13 @@ public class PlayerLife : MonoBehaviour
     [SerializeField] private AudioSource deathSoundEffect;
     [SerializeField] private AudioSource jokeSoundEffect;
 
+    int deathAnimHash;
+
+    private void Awake()
+    {
+        deathAnimHash = Animator.StringToHash("death");
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +47,7 @@ public class PlayerLife : MonoBehaviour
     {
         deathSoundEffect.Play();
         rb.bodyType = RigidbodyType2D.Static;
-        anim.SetTrigger("death");
+        anim.SetTrigger(deathAnimHash);
     }
 
     //Bro, how the fuck did you die to this?
@@ -48,7 +55,7 @@ public class PlayerLife : MonoBehaviour
     {
         jokeSoundEffect.Play();
         rb.bodyType = RigidbodyType2D.Static;
-        anim.SetTrigger("death");
+        anim.SetTrigger(deathAnimHash);
     }
 
     //Restarts the level as well as score and gem placement, might change later
