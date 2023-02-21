@@ -4819,6 +4819,10 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2356662810222473449, guid: 59a5869757cc4e04c9f6742a2a7d8f26, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 4670656165964541319, guid: dcb7698b9cf077c49bae3d84673023f3, type: 2}
     - target: {fileID: 2356662810222473450, guid: 59a5869757cc4e04c9f6742a2a7d8f26, type: 3}
       propertyPath: m_Name
       value: BG Music
