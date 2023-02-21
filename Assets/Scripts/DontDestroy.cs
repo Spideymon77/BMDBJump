@@ -25,6 +25,7 @@ public class DontDestroy : MonoBehaviour
         }
     }
 
+    //Allows BG Music to start if player is in the boxcollider2D trigger
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name == "Player")
@@ -33,6 +34,7 @@ public class DontDestroy : MonoBehaviour
         }
     }
 
+    //Allows BG Music to stop if player is outside the boxcollider2D trigger
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.name == "Player")

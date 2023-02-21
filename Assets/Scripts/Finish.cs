@@ -13,6 +13,7 @@ public class Finish : MonoBehaviour
         itemcollector = GetComponent<ItemCollector>();
     }
 
+    //Activates the load new screen line if player reaches the finish
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name == "Player")
@@ -21,6 +22,7 @@ public class Finish : MonoBehaviour
         }
     }
 
+    //Loads new scene
     private void CompleteLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

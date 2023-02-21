@@ -5,20 +5,26 @@ using TMPro;
 
 public class SecretsScript : MonoBehaviour
 {
+    //Creates a number that will then be added to
     public int secrets = 0;
 
+    //The text displaying "SECRET"
     public GameObject secretText;
 
+    //The text displlaying number of secrets found as well as the music for finding a secret
     [SerializeField] private TextMeshProUGUI secretsNumber;
     [SerializeField] private AudioSource secretFound;
 
+    //A bool that checks if we already got the secret
     private bool hasPlayed;
 
+    //Returns to bool, indicating that the secret has been played
     private bool HasPlayed()
     {
         return hasPlayed;
     }
 
+    //Checks if the player is at the secret and if the secret has been played
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name == "Player" && hasPlayed == false)
@@ -27,6 +33,7 @@ public class SecretsScript : MonoBehaviour
         }
     }
 
+    //The actual secret activating. In order: Activates hasPlayed bool, adds a number to secrets int, displayed how many secrets found in pause menu, plays secret sound, displays text saying "SECRET", waits, erases text displaying "SECRET", destroys the secret
     IEnumerator Example()
     {
         hasPlayed = true;
