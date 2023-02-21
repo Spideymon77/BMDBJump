@@ -10,16 +10,15 @@ public class SecretsScript : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            secretText.SetActive(true);
+            StartCoroutine(Example());
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    IEnumerator Example()
     {
-        if (collision.gameObject.name == "Player")
-        {
-            secretText.SetActive(false);
-            Destroy(collision.gameObject);
-        }
+        secretText.SetActive(true);
+        yield return new WaitForSeconds(5);
+        secretText.SetActive(false);
+        Destroy(gameObject);
     }
 }
