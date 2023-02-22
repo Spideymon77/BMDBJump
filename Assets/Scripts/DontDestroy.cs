@@ -39,7 +39,7 @@ public class DontDestroy : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            BGM.Stop();
+            BGM.Pause();
         }
     }
 }
