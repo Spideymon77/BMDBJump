@@ -7,8 +7,8 @@ using TMPro;
 public class ItemCollector : MonoBehaviour
 {
     //Text that's changing the score
-    public int gems = 0;
-    public int highscore = 0;
+    private int gems = 0;
+    private int highscore = 0;
 
     //Text displaying the score
     [SerializeField] private TextMeshProUGUI gemsText;
@@ -18,7 +18,7 @@ public class ItemCollector : MonoBehaviour
     [SerializeField] private AudioSource collectionSoundEffect;
     [SerializeField] private AudioSource beerSoundEffect;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+     private void OnTriggerEnter2D(Collider2D collision)
     {
         //The Weed variant: 1 point
         if (collision.gameObject.CompareTag("Gem"))
@@ -27,6 +27,10 @@ public class ItemCollector : MonoBehaviour
             Destroy(collision.gameObject);
             gems++;
             gemsText.text = "Score: " + gems;
+            
+            PlayerPrefs.SetInt("Highscore", gems);
+            PlayerPrefs.GetInt("Highscore");
+            UpdateHighScoreText();
         }
 
         //The Beer variant: 5 points
@@ -40,13 +44,23 @@ public class ItemCollector : MonoBehaviour
             gems++;
             gems++;
             gemsText.text = "Score: " + gems;
-        }
 
-        //Grabs highscore at end of level
-        if (collision.gameObject.CompareTag("Finish"))
-        {
-            highscore = gems;
-            highScoreText.text = "Highscore: " + highscore;
+            PlayerPrefs.SetInt("Highscore", gems);
+            PlayerPrefs.GetInt("Highscore");
+            UpdateHighScoreText();
         }
+    }
+
+    void CheckHighScore()
+    {
+        if (gems > PlayerPrefs.GetInt("Highscore", 0))
+        {
+            PlayerPrefs.SetInt("Highscore", gems);
+        }
+    }
+
+    void UpdateHighScoreText()
+    {
+        highScoreText.text = $"Highscore: {PlayerPrefs.GetInt("Highscore", 0)}";
     }
 }
