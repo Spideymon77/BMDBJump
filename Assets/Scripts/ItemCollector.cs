@@ -8,11 +8,9 @@ public class ItemCollector : MonoBehaviour
 {
     //Text that's changing the score
     private int gems = 0;
-    private int highscore = 0;
 
     //Text displaying the score
     [SerializeField] private TextMeshProUGUI gemsText;
-    [SerializeField] private TextMeshProUGUI highScoreText;
 
     //SFX when collecting items
     [SerializeField] private AudioSource collectionSoundEffect;
@@ -27,10 +25,6 @@ public class ItemCollector : MonoBehaviour
             Destroy(collision.gameObject);
             gems++;
             gemsText.text = "Score: " + gems;
-            
-            PlayerPrefs.SetInt("Highscore", gems);
-            PlayerPrefs.GetInt("Highscore");
-            UpdateHighScoreText();
         }
 
         //The Beer variant: 5 points
@@ -44,23 +38,6 @@ public class ItemCollector : MonoBehaviour
             gems++;
             gems++;
             gemsText.text = "Score: " + gems;
-
-            PlayerPrefs.SetInt("Highscore", gems);
-            PlayerPrefs.GetInt("Highscore");
-            UpdateHighScoreText();
         }
-    }
-
-    void CheckHighScore()
-    {
-        if (gems > PlayerPrefs.GetInt("Highscore", 0))
-        {
-            PlayerPrefs.SetInt("Highscore", gems);
-        }
-    }
-
-    void UpdateHighScoreText()
-    {
-        highScoreText.text = $"Highscore: {PlayerPrefs.GetInt("Highscore", 0)}";
     }
 }
