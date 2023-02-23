@@ -178,6 +178,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: amp
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: freq
+      value: 3.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
 --- !u!1001 &7906629
@@ -379,6 +387,14 @@ PrefabInstance:
     - target: {fileID: 4950135864083871647, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
       propertyPath: m_Name
       value: Gem (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: amp
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: freq
+      value: 3.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
@@ -1148,6 +1164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: amp
+      value: 0.09
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
 --- !u!1001 &266596053
@@ -1204,6 +1224,14 @@ PrefabInstance:
     - target: {fileID: 4950135864083871647, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
       propertyPath: m_Name
       value: Gem (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: amp
+      value: 0.085
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: freq
+      value: 3.23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
@@ -1266,6 +1294,14 @@ PrefabInstance:
     - target: {fileID: 4950135864083871647, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
       propertyPath: m_Name
       value: Gem (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: amp
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: freq
+      value: 3.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
@@ -2234,6 +2270,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: amp
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: freq
+      value: 3.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
 --- !u!4 &504208823 stripped
@@ -2295,6 +2339,14 @@ PrefabInstance:
     - target: {fileID: 4950135864083871647, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
       propertyPath: m_Name
       value: Gem (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: amp
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: freq
+      value: 3.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
@@ -2624,6 +2676,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 94350244}
     m_Modifications:
+    - target: {fileID: 1963133682894025038, guid: 9ba16f7fac1ec114687ce2ee7a26c2a6, type: 3}
+      propertyPath: amp
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963133682894025038, guid: 9ba16f7fac1ec114687ce2ee7a26c2a6, type: 3}
+      propertyPath: freq
+      value: 3.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3129977730437160923, guid: 9ba16f7fac1ec114687ce2ee7a26c2a6, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -2681,6 +2741,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 94350244}
     m_Modifications:
+    - target: {fileID: 1963133682894025038, guid: 9ba16f7fac1ec114687ce2ee7a26c2a6, type: 3}
+      propertyPath: amp
+      value: 0.08
+      objectReference: {fileID: 0}
     - target: {fileID: 3129977730437160923, guid: 9ba16f7fac1ec114687ce2ee7a26c2a6, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -4328,6 +4392,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: amp
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: freq
+      value: 3.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
 --- !u!1001 &1072328405
@@ -4384,6 +4456,10 @@ PrefabInstance:
     - target: {fileID: 4950135864083871647, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
       propertyPath: m_Name
       value: Gem (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: amp
+      value: 0.08
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
@@ -4596,6 +4672,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 94350244}
     m_Modifications:
+    - target: {fileID: 1963133682894025038, guid: 9ba16f7fac1ec114687ce2ee7a26c2a6, type: 3}
+      propertyPath: amp
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963133682894025038, guid: 9ba16f7fac1ec114687ce2ee7a26c2a6, type: 3}
+      propertyPath: freq
+      value: 3.3
+      objectReference: {fileID: 0}
     - target: {fileID: 3129977730437160923, guid: 9ba16f7fac1ec114687ce2ee7a26c2a6, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -5218,6 +5302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: freq
+      value: 3.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
 --- !u!1 &1484318243 stripped
@@ -5447,6 +5535,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 94350244}
     m_Modifications:
+    - target: {fileID: 1963133682894025038, guid: 9ba16f7fac1ec114687ce2ee7a26c2a6, type: 3}
+      propertyPath: amp
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963133682894025038, guid: 9ba16f7fac1ec114687ce2ee7a26c2a6, type: 3}
+      propertyPath: freq
+      value: 3.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3129977730437160923, guid: 9ba16f7fac1ec114687ce2ee7a26c2a6, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -5643,6 +5739,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: amp
+      value: 0.08
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
 --- !u!4 &1605493884 stripped
@@ -5662,6 +5762,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 94350244}
     m_Modifications:
+    - target: {fileID: 1963133682894025038, guid: 9ba16f7fac1ec114687ce2ee7a26c2a6, type: 3}
+      propertyPath: amp
+      value: 0.09
+      objectReference: {fileID: 0}
     - target: {fileID: 3129977730437160923, guid: 9ba16f7fac1ec114687ce2ee7a26c2a6, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -5990,6 +6094,14 @@ PrefabInstance:
     - target: {fileID: 4950135864083871647, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
       propertyPath: m_Name
       value: Gem (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: amp
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: freq
+      value: 3.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
@@ -6487,6 +6599,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: freq
+      value: 3.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
 --- !u!4 &1797496584 stripped
@@ -6501,6 +6617,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 94350244}
     m_Modifications:
+    - target: {fileID: 1963133682894025038, guid: 9ba16f7fac1ec114687ce2ee7a26c2a6, type: 3}
+      propertyPath: amp
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 1963133682894025038, guid: 9ba16f7fac1ec114687ce2ee7a26c2a6, type: 3}
+      propertyPath: freq
+      value: 3.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3129977730437160923, guid: 9ba16f7fac1ec114687ce2ee7a26c2a6, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -7298,6 +7422,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 94350244}
     m_Modifications:
+    - target: {fileID: 6858146262976925259, guid: 1d1777e0975d2ed4a92c745abd951c6b, type: 3}
+      propertyPath: amp
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6858146262976925259, guid: 1d1777e0975d2ed4a92c745abd951c6b, type: 3}
+      propertyPath: freq
+      value: 3.1
+      objectReference: {fileID: 0}
     - target: {fileID: 8033469797612003547, guid: 1d1777e0975d2ed4a92c745abd951c6b, type: 3}
       propertyPath: m_Name
       value: Shroomiez
@@ -7463,6 +7595,14 @@ PrefabInstance:
     - target: {fileID: 4950135864083871647, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
       propertyPath: m_Name
       value: Gem
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: amp
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 8422843802904189199, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: freq
+      value: 3.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
@@ -41952,6 +42092,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 94350244}
     m_Modifications:
+    - target: {fileID: 1963133682894025038, guid: 9ba16f7fac1ec114687ce2ee7a26c2a6, type: 3}
+      propertyPath: freq
+      value: 3.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3129977730437160923, guid: 9ba16f7fac1ec114687ce2ee7a26c2a6, type: 3}
       propertyPath: m_RootOrder
       value: 5
