@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4950135864083871645}
   - component: {fileID: 4950135864083871640}
   - component: {fileID: 4950135864083871643}
+  - component: {fileID: 8422843802904189199}
   m_Layer: 0
   m_Name: Gem
   m_TagString: Gem
@@ -124,5 +125,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6b6d506929b91d4b9e835c222365d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gems: 0
+  tripping: 0
+  trippingTime: 0
   gemsText: {fileID: 0}
+  trippingEffect: {fileID: 0}
   collectionSoundEffect: {fileID: 0}
+  beerSoundEffect: {fileID: 0}
+  shroomSoundEffect: {fileID: 0}
+--- !u!114 &8422843802904189199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4950135864083871647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50c2ecf33825af343a5adb5aadfbe38f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amp: 0.07
+  freq: 3
