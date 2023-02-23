@@ -82,6 +82,15 @@ public class PlayerMovement : MonoBehaviour
             state = MovementState.falling;
         }
 
+        if (Time.timeScale == 0)
+        {
+            anim.enabled = false;
+        }
+        else
+        {
+            anim.enabled = true;
+        }
+
         anim.SetInteger("state", (int)state);
     }
 
