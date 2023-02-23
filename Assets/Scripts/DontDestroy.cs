@@ -16,12 +16,12 @@ public class DontDestroy : MonoBehaviour
         //Destroys the new game object if the original one exists. This means that if a level with BG Music exists, it will destroy the BG Music that is reloaded but not the one that is already loaded
         if (instance != null)
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
         else
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(this.gameObject);
         }
     }
 
