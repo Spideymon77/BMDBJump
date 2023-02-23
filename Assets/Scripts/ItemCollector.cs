@@ -14,6 +14,8 @@ public class ItemCollector : MonoBehaviour
     //Text displaying the score
     [SerializeField] private TextMeshProUGUI gemsText;
 
+    [SerializeField] private GameObject trippingEffect;
+
     //SFX when collecting items
     [SerializeField] private AudioSource collectionSoundEffect;
     [SerializeField] private AudioSource beerSoundEffect;
@@ -21,16 +23,19 @@ public class ItemCollector : MonoBehaviour
 
     void Update()
     {
+        //Tells Shroomiez powerup to stop it's effect and it's sound after tripping time <= 0
         if (tripping == true)
         {
             trippingTime -= Time.deltaTime;
             if (trippingTime <= 0)
             {
                 shroomSoundEffect.Stop();
+                trippingEffect.SetActive(false);
                 tripping = false;
             }
         }
 
+        //Sets tripping time to 16 everytime tripping = false, allowing for multiple trips
         if (tripping == false)
         {
             trippingTime = 16;
@@ -48,7 +53,7 @@ public class ItemCollector : MonoBehaviour
             gemsText.text = "Score: " + gems;
         }
 
-        //Value increases if tripping
+        //Value increases if tripping on Shroomiez
         if (collision.gameObject.CompareTag("Gem") && tripping == true)
         {
             collectionSoundEffect.Play();
@@ -66,7 +71,7 @@ public class ItemCollector : MonoBehaviour
             gemsText.text = "Score: " + gems;
         }
 
-        //Value increases if tripping
+        //Value increases if tripping on Shroomiez
         if (collision.gameObject.CompareTag("Beer") && tripping == true)
         {
             collectionSoundEffect.Play();
@@ -75,7 +80,7 @@ public class ItemCollector : MonoBehaviour
             gemsText.text = "Score: " + gems;
         }
 
-        //The Shroomiez Variant: Powerup: items increase value * 5
+        //The Shroomiez Variant: Powerup items increase value * 5
         {
             if (collision.gameObject.CompareTag("Shroomiez"))
             {
@@ -85,10 +90,11 @@ public class ItemCollector : MonoBehaviour
         }
     }
 
-    //Powerup activates setting tripping to true. After specified amount of time, powerup stops
+    //Powerup activates setting tripping to true. Plays shroom sound as well
     void ActivatePowerUp()
     {
         tripping = true;
+        trippingEffect.SetActive(true);
         shroomSoundEffect.Play();
     }
 }

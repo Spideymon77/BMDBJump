@@ -2396,7 +2396,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.7490196, g: 0.32156864, b: 0.62352943, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3789,6 +3789,103 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3129977730437160923, guid: 9ba16f7fac1ec114687ce2ee7a26c2a6, type: 3}
   m_PrefabInstance: {fileID: 897928284}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &936472555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 936472556}
+  - component: {fileID: 936472559}
+  - component: {fileID: 936472558}
+  - component: {fileID: 936472557}
+  m_Layer: 5
+  m_Name: Shroomiez Effect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &936472556
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936472555}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.7646194, y: 1.3724661, z: 1.5685506}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1289271252}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 776, y: 604}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &936472557
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936472555}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6143e60c873d29c4387129505894663c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &936472558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936472555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.28627452}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 74989ff7425287c4f9df8ab6781c94da, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &936472559
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936472555}
+  m_CullTransparentMesh: 1
 --- !u!1001 &981908186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4721,6 +4818,7 @@ RectTransform:
   - {fileID: 762637723}
   - {fileID: 123938996}
   - {fileID: 842156645}
+  - {fileID: 936472556}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4758,6 +4856,7 @@ MonoBehaviour:
   tripping: 0
   trippingTime: 0
   gemsText: {fileID: 0}
+  trippingEffect: {fileID: 0}
   collectionSoundEffect: {fileID: 0}
   beerSoundEffect: {fileID: 0}
   shroomSoundEffect: {fileID: 0}
@@ -7431,6 +7530,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1439610312}
     - target: {fileID: 5056873604773197242, guid: 7e44023ec49dc5e40a97f0c9178ca925, type: 3}
+      propertyPath: tripping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5056873604773197242, guid: 7e44023ec49dc5e40a97f0c9178ca925, type: 3}
       propertyPath: trippingTime
       value: 16
       objectReference: {fileID: 0}
@@ -7438,6 +7541,10 @@ PrefabInstance:
       propertyPath: highScoreText
       value: 
       objectReference: {fileID: 1506056127}
+    - target: {fileID: 5056873604773197242, guid: 7e44023ec49dc5e40a97f0c9178ca925, type: 3}
+      propertyPath: trippingEffect
+      value: 
+      objectReference: {fileID: 936472555}
     - target: {fileID: 5056873604773197242, guid: 7e44023ec49dc5e40a97f0c9178ca925, type: 3}
       propertyPath: beerSoundEffect
       value: 
