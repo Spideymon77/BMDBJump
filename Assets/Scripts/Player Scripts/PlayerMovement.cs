@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
         dirX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
 
-        //Allowing the playe to jump as well as checking for jumpable ground
+        //Allowing the player to jump as well as checking for jumpable ground
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             jumpSoundEffect.Play();
