@@ -4748,8 +4748,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6b6d506929b91d4b9e835c222365d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gems: 0
   gemsText: {fileID: 0}
-  highScoreText: {fileID: 0}
   collectionSoundEffect: {fileID: 0}
   beerSoundEffect: {fileID: 0}
 --- !u!1001 &1295300182
@@ -6541,6 +6541,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1881561825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672434171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4c4499dec7ca6b47acb6e7a977fbc1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highScoreText: {fileID: 1506056127}
 --- !u!1 &1899108328
 GameObject:
   m_ObjectHideFlags: 0

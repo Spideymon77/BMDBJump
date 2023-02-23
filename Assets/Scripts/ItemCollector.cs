@@ -7,7 +7,7 @@ using TMPro;
 public class ItemCollector : MonoBehaviour
 {
     //Text that's changing the score
-    private int gems = 0;
+    public int gems = 0;
 
     //Text displaying the score
     [SerializeField] private TextMeshProUGUI gemsText;
@@ -16,7 +16,7 @@ public class ItemCollector : MonoBehaviour
     [SerializeField] private AudioSource collectionSoundEffect;
     [SerializeField] private AudioSource beerSoundEffect;
 
-     private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         //The Weed variant: 1 point
         if (collision.gameObject.CompareTag("Gem"))
