@@ -19,7 +19,7 @@ public class ItemCollector : MonoBehaviour
     //SFX when collecting items
     [SerializeField] private AudioSource collectionSoundEffect;
     [SerializeField] private AudioSource beerSoundEffect;
-    [SerializeField] private AudioSource shroomSoundEffect;
+    [SerializeField] public AudioSource shroomSoundEffect;
 
     void Update()
     {

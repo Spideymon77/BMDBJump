@@ -13,7 +13,7 @@ public class SecretsScript : MonoBehaviour
 
     //The text displlaying number of secrets found as well as the music for finding a secret
     [SerializeField] private TextMeshProUGUI secretsNumber;
-    [SerializeField] private AudioSource secretFound;
+    [SerializeField] public AudioSource secretFound;
 
     //A bool that checks if we already got the secret
     private bool hasPlayed;
