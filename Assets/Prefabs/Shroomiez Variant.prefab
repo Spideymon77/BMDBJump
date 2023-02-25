@@ -7,17 +7,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4950135864083871640, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4950135864083871640, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 4950135864083871642, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4950135864083871642, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.47
+      value: 1.0183489
       objectReference: {fileID: 0}
     - target: {fileID: 4950135864083871642, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.48
+      value: 1.0400159
+      objectReference: {fileID: 0}
+    - target: {fileID: 4950135864083871642, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.29755
       objectReference: {fileID: 0}
     - target: {fileID: 4950135864083871642, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
       propertyPath: m_LocalPosition.x
@@ -62,10 +74,10 @@ PrefabInstance:
     - target: {fileID: 4950135864083871645, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d5e4c5c2bb27d4f43acbf14c0415120a, type: 3}
+      objectReference: {fileID: 21300000, guid: 71bd3a249e39cfb4490386dfc9ee5f3f, type: 3}
     - target: {fileID: 4950135864083871647, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
       propertyPath: m_Name
-      value: Shroomiez
+      value: Shroomiez Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4950135864083871647, guid: 9e35c18806cc0294d99bf00ece6e6661, type: 3}
       propertyPath: m_TagString
